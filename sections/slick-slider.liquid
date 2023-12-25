@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="slick-slider">
+    {% for product in collections [section.settings.collections].products %}
+      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="">
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Slick slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Product title"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Product subtitle"
+      },
+      {
+        "type": "collection",
+        "id": "collections",
+        "label": "Select collections"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slick slider",
+        "category": "Collections"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.container {
+  max-width: var(--page-width);
+  margin-inline: auto;
+}
+.page-width-desktop {
+
+}
+<style>
+</style>
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
