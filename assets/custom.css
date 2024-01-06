@@ -81,8 +81,8 @@
 }
 .swiper-button-next::after {
   transform: rotate(-135deg);
-  left: 50%;
-  top: 40%;
+  left: 36%;
+  top: 38%;
 }
 
 
