@@ -41,8 +41,10 @@
 .swiper .slider-content--description {
   
 }
-
-.swiper .swiper-arrow {
+.slider-container {
+  position: relative;
+}
+.slider-container .swiper-arrow {
   background: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -59,17 +61,17 @@
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
   border: 1px solid transparent;
 }
-.swiper .swiper-arrow:hover {
+.slider-container .swiper-arrow:hover {
   border-color: #646464;
 }
-.swiper .swiper-arrow::after {
+.slider-container .swiper-arrow::after {
   background: white;
   content: "";
   position: absolute;
   cursor: pointer;
   font-size: 0;
 }
-.swiper .swiper-arrow::after {
+.slider-container .swiper-arrow::after {
   height: 12px;
   width: 12px;
   border-left: 2px solid #646464;

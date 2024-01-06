@@ -8,7 +8,7 @@
 {% endif %}
 
 
-<div class="page-width-desktop">
+<div class="page-width-desktop slider-container">
   <div 
       class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }} {% if section.settings.slide_card %} slides-card {% endif %}" 
       style="max-width: {{ containerWidth }}px"
@@ -37,10 +37,9 @@
         </div>
       {% endfor %}
     </div>
-    
+  </div>
       <button class="swiper-arrow swiper-button-next"></button>
       <button class="swiper-arrow swiper-button-prev"></button>
-  </div>
 </div>
 
 {% schema %}
