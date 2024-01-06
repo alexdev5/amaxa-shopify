@@ -63,6 +63,12 @@
 .slider-container .swiper-arrow:hover {
   border-color: #646464;
 }
+.slider-container .swiper-button-next {
+  right: 0;
+}
+.slider-container .swiper-button-prev {
+  left: 0;
+}
 .slider-container .swiper-arrow::after {
   content: "";
   height: 12px;
