@@ -1,7 +1,12 @@
-{%- assign slider_columns_desktop_int = section.settings.slider_columns_desktop | times: 1 -%}
-{%- assign slide_width = section.settings.slide_width | times: 1 -%}
-{%- assign slides_padding = slide_width | plus: 48 -%}
-{%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
+{% assign slider_columns_desktop_int = section.settings.slider_columns_desktop | times: 1 %}
+{% assign slide_width = section.settings.slide_width | times: 1 %}
+
+{% if section.settings.container_width %}
+  {%- assign containerWidth = 100 | times: slide_width -%}
+{% else %}
+  {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
+{% endif %}
+
 
 <div class="page-width-desktop">
   <div 
@@ -73,6 +78,12 @@
       "id": "slide_card",
       "default": true,
       "label": "Display as card (with background)"
+    },
+    {
+      "type": "checkbox",
+      "id": "container_width",
+      "default": false,
+      "label": "Container width"
     },
     {
       "type": "select",
