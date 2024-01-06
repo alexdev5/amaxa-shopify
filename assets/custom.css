@@ -51,12 +51,16 @@
   position: absolute;
   top: 50%
   transform-origin: center;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
   height: 52px;
   width: 52px;
   z-index: 1;
-  transition: all 250ms;
+  transition: all .25;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+  border: 1px solid transparent;
+}
+.swiper .swiper-arrow:hover {
+  border-color: #646464;
 }
 .swiper .swiper-arrow::after {
   background: white;
