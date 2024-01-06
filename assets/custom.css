@@ -51,7 +51,6 @@
   font-size: 0;
   padding: 0;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   height: 52px;
   width: 52px;
@@ -78,9 +77,11 @@
 }
 .swiper-button-prev::after {
   transform: rotate(45deg) translateX(-50%);
+  top: 50%;
 }
 .swiper-button-next::after {
-  transform: rotate(-90deg) translateX(-50%);
+  transform: rotate(-135deg);
+  top: 40%;
 }
 
 
