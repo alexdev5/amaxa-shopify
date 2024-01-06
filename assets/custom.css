@@ -58,20 +58,12 @@
   transition: all 250ms;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
 }
-.swiper .swiper-arrow::before,
 .swiper .swiper-arrow::after {
   background: white;
   content: "";
   position: absolute;
   cursor: pointer;
   font-size: 0;
-}
-.swiper .swiper-arrow::before {
-  background: #646464;
-  width: 26px;
-  height: 2px;
-  top: calc(50% - 1px);
-  left: calc(50% - 10px);
 }
 .swiper .swiper-arrow::after {
   height: 12px;
