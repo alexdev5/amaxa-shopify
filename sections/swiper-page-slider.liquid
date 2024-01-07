@@ -7,8 +7,6 @@
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
 
-{{ section.blocks[0].image | json }}
-
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
@@ -21,6 +19,7 @@
         <div class="swiper-wrapper">
             {%- for block in section.blocks -%}
               
+      {{ block.settings.page | json }}
               {% assign title = block.settings.page.title %}
               {% if block.settings.title %}
                 {% assign title = block.settings.title %}
