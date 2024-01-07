@@ -35,8 +35,6 @@
   {% endif %}
 
 {% endfor %}
-{{ listItemsEnd }}
-{{ listItemsStart }}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="{% if section.settings.container_width %} page-width {% endif %}">
@@ -89,8 +87,6 @@
                   </h2>
             
                 {%- when 'caption' -%}
-                  <b>{{ listItemsStart }}</b>
-            <b>{{ forloop.index0 }}</b>
                   {% if listItemsStart == forloop.index0 %}
                     <ul class="image-with-text__list">
                   {% endif %}
