@@ -6,7 +6,9 @@
 {% else %}
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
-{{ section.blocks[0].settings | json }}
+
+{{ section.blocks[0].settings.page | json }}
+
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
