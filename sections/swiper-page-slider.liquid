@@ -2,69 +2,73 @@
 {% assign slide_width = section.settings.slide_width | times: 1 %}
 
 {% if section.settings.container_width %}
-  {%- assign containerWidth = 100 | times: slide_width -%}
+    {%- assign containerWidth = 100 | times: slide_width -%}
 {% else %}
-  {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
+    {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
 
-
 <div class="page-width-desktop slider-container">
-  <div 
-      class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
-            {% if section.settings.slide_card %} slides-card {% endif %}
-            slide-image-{{ section.settings.image_width }}
+    <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
+        {% if section.settings.slide_card %} slides-card {% endif %}
+        slide-image-{{ section.settings.image_width }}
       "
-      style="max-width: {{ containerWidth }}px"
-      data-columns="{{ section.settings.slider_columns_desktop }}"
-      data-slide-width="{{ slide_width }}"
+         style="max-width: {{ containerWidth }}px"
+         data-columns="{{ section.settings.slider_columns_desktop }}"
+         data-slide-width="{{ slide_width }}"
     >
-    <div  class="swiper-wrapper">
-      {% for product in collections [section.settings.collections].products %}
-        <div class="swiper-slide">
-          <div class="swiper-slide--inner">
-              <div class="swiper-slide--image">
-                  <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
-              </div>
-              <div class="swiper-slide--content slider-content">
-                {% if section.settings.is_item_title %}
-                  <p class="slider-content--title">{{ product.title }}</p>
-                {% endif %}
-        
-                {% if section.settings.is_item_description %}
-                  <p class="slider-content--description">
-                    {{ product.description }}
-                  </p>
-                {% endif %}
-              </div>
-          </div>
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {% assign title = block.page.title %}
+              {% if block.title %}
+                {% assign title = block.title %}
+              {% endif %}
+
+              {% assign buttonUrl = block.page.url %}
+              {% if buttonUrl.button_link %}
+                {% assign buttonUrl = block.button_link %}
+              {% endif %}
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide--inner">
+                        <div class="swiper-slide--image">
+                            <img src="{{ block.image_page | img_url: 'original' }}" alt="alt">
+                        </div>
+                        <div class="swiper-slide--content slider-content">
+                            {% if section.settings.show_title %}
+                                <p class="slider-content--title">{{ title }}</p>
+                            {% endif %}
+
+                            {% if section.settings.show_button %}
+                                <div>
+                                    <a href="" class="button button--primary"></a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-      {% endfor %}
     </div>
-  </div>
-      <button class="swiper-arrow swiper-button-next"></button>
-      <button class="swiper-arrow swiper-button-prev"></button>
+    <button class="swiper-arrow swiper-button-next"></button>
+    <button class="swiper-arrow swiper-button-prev"></button>
 </div>
 
 {% schema %}
 {
   "name": "Swiper page slider",
+  "class": "section",
   "settings": [
     {
-      "type": "page",
-      "id": "pages",
-      "label": "Select pages"
-    },
-    {
       "type": "checkbox",
-      "id": "is_item_title",
+      "id": "show_title",
       "default": true,
-      "label": "Show title page"
+      "label": "Show title"
     },
     {
       "type": "checkbox",
-      "id": "is_item_description",
-      "default": false,
-      "label": "Show description page"
+      "id": "show_button",
+      "default": true,
+      "label": "Show button"
     },
     {
       "type": "select",
@@ -135,28 +139,52 @@
       "label": "Size slide"
     }
   ],
+  "blocks": [
+    {
+      "type": "page",
+      "name": "Select page slide",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Select page 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_page",
+          "label": "Select image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom title (Instead of a page title)"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Custom url"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Swiper slider",
-      "category": "Collections"
+      "blocks": [
+        {
+          "type": "page"
+        }
+      ]
     }
   ]
 }
 {% endschema %}
 
 {% stylesheet %}
-  .container {
-    max-width: var(--page-width);
-    margin-inline: auto;
-  }
-  .page-width-desktop {
-  
-  }
-  .slick-slider {
-    display: flex;
-  }
+
 {% endstylesheet %}
 
 {% javascript %}
-  
+
 {% endjavascript %}
