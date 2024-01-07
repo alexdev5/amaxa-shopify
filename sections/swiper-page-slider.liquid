@@ -18,25 +18,25 @@
     >
         <div class="swiper-wrapper">
             {%- for block in section.blocks -%}
-              {% assign title = block.page.title %}
-              {% if block.title %}
-                {% assign title = block.title %}
+              {% assign title = block.settings.page.title %}
+              {% if block.settings.title %}
+                {% assign title = block.settings.title %}
               {% endif %}
 
-              {% assign buttonUrl = block.page.url %}
-              {% if block.button_link %}
-                {% assign buttonUrl = block.button_link %}
+              {% assign buttonUrl = block.settings.page.url %}
+              {% if block.settings.button_link %}
+                {% assign buttonUrl = block.settings.button_link %}
               {% endif %}
 
               {% assign buttonLabel = 'Show more' %}
-              {% if block.button_label %}
-                {% assign buttonLabel = block.button_label %}
+              {% if block.settings.button_label %}
+                {% assign buttonLabel = block.settings.button_label %}
               {% endif %}
 
                 <div class="swiper-slide">
                     <div class="swiper-slide--inner">
                         <div class="swiper-slide--image">
-                            <img src="{{ block.image | img_url: 'original' }}" alt="alt">
+                            <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt">
                         </div>
                         <div class="swiper-slide--content slider-content">
                             {% if section.settings.show_title %}
