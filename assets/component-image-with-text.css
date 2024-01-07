@@ -48,7 +48,7 @@
   height: 35px;
   position: absolute;
   top: 5px;
-  right: calc(100% + 10px);
+  right: calc(100% + 20px);
 }
 .image-with-text .list-options img {
   max-width: 100%;
@@ -57,7 +57,7 @@
 .image-with-text .list-options-item--title {
   font-weight: 600;
   margin-bottom: 1px;
-  font-size: calc(var(--font-heading-scale) * 2.4rem);
+  font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
 .image-with-text .list-options-item--text {
