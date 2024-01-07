@@ -148,6 +148,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
         "container_width": false,
+        "color_background": "#FAFAFA",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
