@@ -121,11 +121,20 @@
             "item_title": "Queen’s Award Winning",
             "item_content": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.<\/p>"
           }
+        },
+        "57d0a7c9-0836-4e9b-8978-40e52a26e213": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Screenshot_1_53d08646-37e4-4b2c-938d-83fd6e515e6b.png",
+            "item_title": "50 Years of Innovation",
+            "item_content": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
+          }
         }
       },
       "block_order": [
         "template--20325051433294__aa0320bf-7dfd-4903-be41-e45e98c13103-heading-1",
-        "476f34a9-b267-47df-aa19-aff1fdb012f8"
+        "476f34a9-b267-47df-aa19-aff1fdb012f8",
+        "57d0a7c9-0836-4e9b-8978-40e52a26e213"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
