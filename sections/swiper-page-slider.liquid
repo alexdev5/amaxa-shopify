@@ -36,7 +36,7 @@
                 <div class="swiper-slide">
                     <div class="swiper-slide--inner">
                         <div class="swiper-slide--image">
-                            <img src="{{ block.image_page | img_url: 'original' }}" alt="alt">
+                            <img src="{{ block.image | img_url: 'original' }}" alt="alt">
                         </div>
                         <div class="swiper-slide--content slider-content">
                             {% if section.settings.show_title %}
@@ -56,6 +56,7 @@
             {% endfor %}
         </div>
     </div>
+  
     <button class="swiper-arrow swiper-button-next"></button>
     <button class="swiper-arrow swiper-button-prev"></button>
 </div>
@@ -159,7 +160,7 @@
         },
         {
           "type": "image_picker",
-          "id": "image_page",
+          "id": "image",
           "label": "Select image"
         },
         {
