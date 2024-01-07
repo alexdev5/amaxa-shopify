@@ -12,14 +12,12 @@
         {% if section.settings.slide_card %} slides-card {% endif %}
         slide-image-{{ section.settings.image_width }}
       "
-         style="max-width: {{ containerWidth }}px"
+         {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
          data-columns="{{ section.settings.slider_columns_desktop }}"
          data-slide-width="{{ slide_width }}"
     >
         <div class="swiper-wrapper">
             {% for block in section.blocks %}
-              
-      {{ block.settings.image | json }}
               
               {% assign title = block.settings.page.title %}
               {% if block.settings.title %}
