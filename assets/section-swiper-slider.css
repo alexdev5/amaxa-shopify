@@ -29,9 +29,7 @@
   background-color: #ffffff;
   box-shadow: 0 0 calc((1.0rem * -1 + 3.5rem) * 1) rgba(0, 0, 0, 0.05);
 }
-.swiper .swiper-slide--inner > div {
-  padding-bottom: 12px;
-}
+
 .swiper-slide--image {
   max-width: 236px;
   margin-inline: auto;
@@ -48,8 +46,8 @@
   text-align: center;
   color: rgb(46, 42, 57);
 }
-.swiper .slider-content--description {
-  
+.swiper-slide--content {
+  padding-bottom: 12px;
 }
 .slider-container {
   position: relative;
