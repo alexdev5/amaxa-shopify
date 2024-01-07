@@ -24,7 +24,8 @@
                 {% assign title = block.settings.title %}
               {% endif %}
 
-          {{ title | json }}
+          {{ block.settings.page.title | json }}
+          {{ block.settings.title | json }}
               {% assign buttonUrl = block.settings.page.url %}
               {% if block.settings.button_url %}
                 {% assign buttonUrl = block.settings.button_url %}
