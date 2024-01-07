@@ -24,9 +24,6 @@
   endif
 -%}
 
-{% assign listItemsStart = 0 %}
-{% assign listItemsEnd = 0 %}
-
 {%- for block in section.blocks -%}
   
   {%- if block.type == 'caption' -%}
@@ -89,13 +86,19 @@
                   >
                     {{ block.settings.heading }}
                   </h2>
+            
                 {%- when 'caption' -%}
-                  <p
-                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
-                    {{ block.shopify_attributes }}
-                  >
+                  {% if listItemsStart == forloop.index0 %}
+                    <ul class="image-with-text__list">
+                  {% endif %}
+                
+                  <li class="image-with-text__list-item" {{ block.shopify_attributes }}>
                     {{ block.settings.caption | escape }}
-                  </p>
+                  </li>
+                      
+                  {% if listItemsEnd == forloop.index0 %}
+                    </ul>
+                  {% endif %}
                 {%- when 'text' -%}
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
