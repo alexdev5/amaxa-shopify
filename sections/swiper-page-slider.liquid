@@ -2,7 +2,7 @@
 {% assign slide_width = section.settings.slide_width | times: 1 %}
 
 {% if section.settings.container_width %}
-    {%- assign containerWidth = 100 | times: slide_width -%}
+    {%- assign containerWidth = 100 | times: 1 -%}
 {% else %}
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
