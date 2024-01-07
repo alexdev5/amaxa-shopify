@@ -6,47 +6,48 @@
 {% else %}
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
-{% assign numPages = 8 %}
 
 <div class="page-width-desktop slider-container">
-    <div
-            class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
-            {% if section.settings.slide_card %} slides-card {% endif %}
-            slide-image-{{ section.settings.image_width }}
+    <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
+        {% if section.settings.slide_card %} slides-card {% endif %}
+        slide-image-{{ section.settings.image_width }}
       "
-            style="max-width: {{ containerWidth }}px"
-            data-columns="{{ section.settings.slider_columns_desktop }}"
-            data-slide-width="{{ slide_width }}"
+         style="max-width: {{ containerWidth }}px"
+         data-columns="{{ section.settings.slider_columns_desktop }}"
+         data-slide-width="{{ slide_width }}"
     >
-      <div class="swiper-wrapper">
-          {% for i in (1..numPages) %}
-              {% assign page_key = 'page_' | append: i %}
-              {% assign page = section.settings[page_key] %}
-      
-              {% if page and page.title %}
-                  <div class="swiper-slide">
-                      <div class="swiper-slide--inner">
-                          <div class="swiper-slide--image">
-                              <img src="{{ page.featured_image | img_url: 'original' }}" alt="alt">
-                          </div>
-                          <div class="swiper-slide--content slider-content">
-                              {% if section.settings.is_item_title %}
-                                  <p class="slider-content--title">{{ page.title }}</p>
-                              {% endif %}
-      
-                              {% if section.settings.is_item_description %}
-                                  <p class="slider-content--description">
-                                      {{ page.description }}
-                                  </p>
-                              {% endif %}
-                          </div>
-                      </div>
-                  </div>
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {% assign title = block.page.title %}
+              {% if block.title %}
+                {% assign title = block.title %}
               {% endif %}
-          {% endfor %}
-      </div>
 
+              {% assign buttonUrl = block.page.url %}
+              {% if buttonUrl.button_link %}
+                {% assign buttonUrl = block.button_link %}
+              {% endif %}
 
+                <div class="swiper-slide">
+                    <div class="swiper-slide--inner">
+                        <div class="swiper-slide--image">
+                            <img src="{{ block.image_page | img_url: 'original' }}" alt="alt">
+                        </div>
+                        <div class="swiper-slide--content slider-content">
+                            {% if section.settings.show_title %}
+                                <p class="slider-content--title">{{ title }}</p>
+                            {% endif %}
+
+                            {% if section.settings.show_button %}
+                                <div>
+                                    <a href="" class="button button--primary"></a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
     <button class="swiper-arrow swiper-button-next"></button>
     <button class="swiper-arrow swiper-button-prev"></button>
@@ -55,58 +56,19 @@
 {% schema %}
 {
   "name": "Swiper page slider",
+  "class": "section",
   "settings": [
     {
-      "type": "page",
-      "id": "page_1",
-      "label": "Select page 1"
-    },
-    {
-      "type": "page",
-      "id": "page_2",
-      "label": "Select page 2"
-    },
-    {
-      "type": "page",
-      "id": "page_3",
-      "label": "Select page 3"
-    },
-    {
-      "type": "page",
-      "id": "page_4",
-      "label": "Select page 4"
-    },
-    {
-      "type": "page",
-      "id": "page_5",
-      "label": "Select page 5"
-    },
-    {
-      "type": "page",
-      "id": "page_6",
-      "label": "Select page 6"
-    },
-    {
-      "type": "page",
-      "id": "page_7",
-      "label": "Select page 7"
-    },
-    {
-      "type": "page",
-      "id": "page_8",
-      "label": "Select page 8"
-    },
-    {
       "type": "checkbox",
-      "id": "is_item_title",
+      "id": "show_title",
       "default": true,
-      "label": "Show title page"
+      "label": "Show title"
     },
     {
       "type": "checkbox",
-      "id": "is_item_description",
-      "default": false,
-      "label": "Show description page"
+      "id": "show_button",
+      "default": true,
+      "label": "Show button"
     },
     {
       "type": "select",
@@ -118,12 +80,12 @@
           "label": "full"
         },
         {
-          "value": "small",
-          "label": "small"
+          "value": "small_padding",
+          "label": "small padding"
         },
         {
-          "value": "normal",
-          "label": "normal"
+          "value": "normal_padding",
+          "label": "normal padding"
         }
       ],
       "default": "full"
@@ -177,26 +139,50 @@
       "label": "Size slide"
     }
   ],
+  "blocks": [
+    {
+      "type": "page",
+      "name": "Select page slide",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Select page 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_page",
+          "label": "Select image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom title (Instead of a page title)"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Custom url"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Swiper page slider",
-      "category": "Pages"
+      "name": "Swiper slider",
+      "blocks": [
+        {
+          "type": "page"
+        }
+      ]
     }
   ]
 }
 {% endschema %}
 
 {% stylesheet %}
-.container {
-max-width: var(--page-width);
-margin-inline: auto;
-}
-.page-width-desktop {
 
-}
-.slick-slider {
-display: flex;
-}
 {% endstylesheet %}
 
 {% javascript %}
