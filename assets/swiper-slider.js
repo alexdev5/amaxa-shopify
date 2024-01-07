@@ -12,6 +12,7 @@ function swiperSliderInit() {
         new Swiper(slider, {
             slidesPerView: columns,
             spaceBetween: 0,
+            watchOverflow: true,
             navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
