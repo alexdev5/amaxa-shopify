@@ -17,7 +17,7 @@
          data-slide-width="{{ slide_width }}"
     >
         <div class="swiper-wrapper">
-            {%- for block in section.blocks -%}
+            {% for block in section.blocks %}
               1223
       {{ block | json }}
               {% assign title = block.settings.page.title %}
