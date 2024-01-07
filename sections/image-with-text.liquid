@@ -88,15 +88,15 @@
             
                 {%- when 'caption' -%}
                   {% if listItemsStart == forloop.index0 %}
-                    <ul class="image-with-text__list">
+                    <ul class="list-options">
                   {% endif %}
                 
-                  <li class="image-with-text__list-item item-content" {{ block.shopify_attributes }}>
-                    <div class="item-content--img">
+                  <li class="list-options-item" {{ block.shopify_attributes }}>
+                    <div class="list-options-item--img">
                       <img src="{{ block.settings.icon | img_url: 'original' }}" alt="alt">
                     </div>
-                    <div class="item-content--title">{{ block.settings.item_title }}</div>
-                    <div class="item-content--text">{{ block.settings.item_text }}</div>
+                    <div class="list-options-item--title">{{ block.settings.item_title }}</div>
+                    <div class="list-options-item--text">{{ block.settings.item_text }}</div>
                   </li>
                       
                   {% if listItemsEnd == forloop.index0 %}
