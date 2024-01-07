@@ -61,6 +61,7 @@
 
 .contains-media,
 .global-media-settings {
+  --media-radius: 0;
   --border-radius: var(--media-radius);
   --border-width: var(--media-border-width);
   --border-opacity: var(--media-border-opacity);
