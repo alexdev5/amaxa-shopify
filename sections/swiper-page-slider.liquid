@@ -6,7 +6,7 @@
 {% else %}
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
-
+{{ section.blocks | json }}
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
@@ -32,7 +32,7 @@
               {% if block.settings.button_label %}
                 {% assign buttonLabel = block.settings.button_label %}
               {% endif %}
-{{ block | json }}
+
                 <div class="swiper-slide">
                     <div class="swiper-slide--inner">
                         <div class="swiper-slide--image">
