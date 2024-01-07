@@ -20,19 +20,17 @@
             {% for block in section.blocks %}
               
               {% assign title = block.settings.page.title %}
-              {% if block.settings.title %}
+              {% if block.settings.title!= blank %}
                 {% assign title = block.settings.title %}
               {% endif %}
 
-          {{ block.settings.page.title | json }}
-          {{ block.settings.title | json }}
               {% assign buttonUrl = block.settings.page.url %}
-              {% if block.settings.button_url %}
+              {% if block.settings.button_url != blank %}
                 {% assign buttonUrl = block.settings.button_url %}
               {% endif %}
 
               {% assign buttonLabel = 'Show more' %}
-              {% if block.settings.button_label %}
+              {% if block.settings.button_label != blank %}
                 {% assign buttonLabel = block.settings.button_label %}
               {% endif %}
 
