@@ -158,7 +158,7 @@
           "type": "page",
           "settings": {
             "page": "man",
-            "image_page": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
+            "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
             "title": "",
             "button_link": "",
             "button_label": ""
