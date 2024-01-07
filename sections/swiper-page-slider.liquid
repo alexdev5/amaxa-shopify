@@ -7,10 +7,7 @@
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
 
-{{ section.blocks[0].settings.page.title | json }}
-{{ section.blocks[0].settings.page.content | json }}
-{{ section.blocks[0].id | json }}
-{{ section.blocks[0].settings.page.url | json }}
+{{ section.blocks[0].image | json }}
 
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
@@ -23,14 +20,15 @@
     >
         <div class="swiper-wrapper">
             {%- for block in section.blocks -%}
+              
               {% assign title = block.settings.page.title %}
               {% if block.settings.title %}
                 {% assign title = block.settings.title %}
               {% endif %}
 
               {% assign buttonUrl = block.settings.page.url %}
-              {% if block.settings.button_link %}
-                {% assign buttonUrl = block.settings.button_link %}
+              {% if block.settings.button_url %}
+                {% assign buttonUrl = block.settings.button_url %}
               {% endif %}
 
               {% assign buttonLabel = 'Show more' %}
@@ -175,7 +173,7 @@
         },
         {
           "type": "url",
-          "id": "button_link",
+          "id": "button_url",
           "label": "Custom url"
         },
         {
