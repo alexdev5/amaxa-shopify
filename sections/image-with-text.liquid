@@ -24,18 +24,21 @@
   endif
 -%}
 
-{% assign countItems = 0 %}
+{% assign listItemsStart = 0 %}
+{% assign listItemsEnd = 0 %}
+
 {%- for block in section.blocks -%}
-  gulr
-  {%- if block.type == 'caption' -%}
-      {% if countItems == 0 %}
-        
-      {% endif %}
-    {{ countItems }}
-    {% assign countItems = forloop.index0 %}
-  {% endif %}
   
+  {%- if block.type == 'caption' -%}
+      {% if listItemsStart == 0 %}
+        {% assign listItemsStart = forloop.index0 %}
+      {% endif %}
+    {% assign listItemsEnd = forloop.index0 %}
+  {% endif %}
+
 {% endfor %}
+{{ listItemsEnd }}
+{{ listItemsStart }}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="{% if section.settings.container_width %} page-width {% endif %}">
