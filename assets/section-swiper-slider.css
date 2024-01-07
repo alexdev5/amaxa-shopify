@@ -16,13 +16,13 @@
   padding-inline: 6px;
 }
 .swiper-slide-container {
-  padding: 16px;
+  padding: var(--offset-normal)
 }
 .swiper .swiper-slide {
   padding: 20px 16px;
 }
 .swiper .swiper-slide--inner {
-  border-radius: var(--product-card-corner-radius);
+  
 }
 
 .swiper.slides-card .swiper-slide--inner {
