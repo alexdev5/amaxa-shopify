@@ -24,8 +24,13 @@
               {% endif %}
 
               {% assign buttonUrl = block.page.url %}
-              {% if buttonUrl.button_link %}
+              {% if block.button_link %}
                 {% assign buttonUrl = block.button_link %}
+              {% endif %}
+
+              {% assign buttonLabel = 'Show more' %}
+              {% if block.button_label %}
+                {% assign buttonLabel = block.button_label %}
               {% endif %}
 
                 <div class="swiper-slide">
@@ -40,7 +45,9 @@
 
                             {% if section.settings.show_button %}
                                 <div>
-                                    <a href="" class="button button--primary"></a>
+                                    <a href="{{ buttonUrl }}" class="button button--primary">
+                                      {{ buttonLabel }}
+                                    </a>
                                 </div>
                             {% endif %}
                         </div>
@@ -67,7 +74,7 @@
     {
       "type": "checkbox",
       "id": "show_button",
-      "default": true,
+      "default": false,
       "label": "Show button"
     },
     {
@@ -164,6 +171,11 @@
           "type": "url",
           "id": "button_link",
           "label": "Custom url"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
         }
       ]
     }
