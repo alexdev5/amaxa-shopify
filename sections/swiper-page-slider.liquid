@@ -19,7 +19,8 @@
         <div class="swiper-wrapper">
             {% for block in section.blocks %}
               
-      {{ block.settings.page | json }}
+      {{ block.settings.image | json }}
+              
               {% assign title = block.settings.page.title %}
               {% if block.settings.title %}
                 {% assign title = block.settings.title %}
@@ -38,7 +39,7 @@
                 <div class="swiper-slide">
                     <div class="swiper-slide--inner">
                         <div class="swiper-slide--image">
-                            <img src="{{ block.settings.image | image_url: 'original' }}" alt="alt">
+                            <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt">
                         </div>
                         <div class="swiper-slide--content slider-content">
                             {% if section.settings.show_title %}
