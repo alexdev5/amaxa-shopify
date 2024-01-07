@@ -129,12 +129,21 @@
             "item_title": "50 Years of Innovation",
             "item_content": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
           }
+        },
+        "8d4be74a-ee2c-4a0d-b836-785ef9bb96b8": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "item_title": "Backed by Science",
+            "item_content": "<p>No other UK vitamin company has such a diverse range of published research to support its products.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--20325051433294__aa0320bf-7dfd-4903-be41-e45e98c13103-heading-1",
         "476f34a9-b267-47df-aa19-aff1fdb012f8",
-        "57d0a7c9-0836-4e9b-8978-40e52a26e213"
+        "57d0a7c9-0836-4e9b-8978-40e52a26e213",
+        "8d4be74a-ee2c-4a0d-b836-785ef9bb96b8"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
