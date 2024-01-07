@@ -1,11 +1,3 @@
-:root {
-  --offset-x-small: 4px;
-  --offset-small: 8px;
-  --offset-x-normal: 12px;
-  --offset-normal: 16px;
-  --offset-middle: 24px;
-  --offset-big: 32px;
-}
 .swiper-container:not(.swiper-initialized) {
   display: flex;
 }

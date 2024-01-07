@@ -3,6 +3,13 @@
   --alpha-button-border: 1;
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
+
+  --offset-x-small: 4px;
+  --offset-small: 8px;
+  --offset-x-normal: 12px;
+  --offset-normal: 16px;
+  --offset-middle: 24px;
+  --offset-big: 32px;
 }
 
 .product-card-wrapper .card,
