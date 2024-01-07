@@ -7,7 +7,7 @@
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
 
-{{ section.blocks[0].settings.page | json }}
+{{ section.blocks[0].settings.page.description | json }}
 
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
