@@ -34,6 +34,9 @@
 }
 
 .image-with-text .list-options {
+  padding-left: 0;
+}
+.image-with-text__content {
   padding-left: 56px;
 }
 .image-with-text .list-options p {
