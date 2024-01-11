@@ -191,6 +191,55 @@
         "slider_columns_desktop": 3
       }
     },
+    "image_with_text_3dXjRB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_F3V6aM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get to Know Amaxa Bionica",
+            "heading_size": "h1"
+          }
+        },
+        "caption_j4tkWY": {
+          "type": "caption",
+          "settings": {
+            "item_title": "",
+            "item_text": "<p>We’re an independent, family-run British business – a name people have <br\/>trusted for 50 years for safe, balanced and effective support. Our team <br\/>brings together decades of experience, all with the goal of helping you <br\/>to be at your best, day-after-day.<\/p>"
+          }
+        },
+        "button_L9VjXW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_F3V6aM",
+        "caption_j4tkWY",
+        "button_L9VjXW"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
+        "container_width": false,
+        "color_background": "#FAFAFA",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "dec28744-d94a-4efa-8a11-8b18edd4ac32": {
       "type": "rich-text",
       "blocks": {
@@ -268,6 +317,7 @@
     "d2fad9d1-7173-41ed-9227-be7e3896c5ea",
     "aa0320bf-7dfd-4903-be41-e45e98c13103",
     "026a83c5-ae34-4bef-a903-75c4317b34ab",
+    "image_with_text_3dXjRB",
     "dec28744-d94a-4efa-8a11-8b18edd4ac32",
     "featured-collection"
   ]
