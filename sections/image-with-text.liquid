@@ -95,9 +95,9 @@
                     <ul class="list-options">
                   {% endif %}
 
-                  <li class="list-options-item" {{ block.shopify_attributes }}>
+                  <li class="list-options-item" {{ block.shopify_attributes }} {% if block.settings.icon != blank %} is-image {% endif %}>
                     {% if block.settings.icon != blank %}
-                      <div class="list-options-item--img {% if block.settings.icon != blank %} is-image {% endif %}">
+                      <div class="list-options-item--img">
                         <img src="{{ block.settings.icon | img_url: 'original' }}" alt="alt">
                       </div>
                     {% endif %}
