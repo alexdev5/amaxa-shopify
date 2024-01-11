@@ -33,9 +33,6 @@
   list-style: none;
 }
 
-.image-with-text .list-options {
-  padding-left: 56px;
-}
 .image-with-text .list-options p {
   margin: 0;
 }
@@ -43,6 +40,11 @@
   margin-bottom: var(--offset-big);
   position: relative;
 }
+
+.image-with-text .list-options-item.is-image {
+  padding-left: 56px;
+}
+
 .image-with-text .list-options-item--img {
   width: 35px;
   height: 35px;
