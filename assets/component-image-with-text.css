@@ -34,7 +34,7 @@
 }
 
 .image-with-text .list-options {
-  padding-left: 0;
+  padding-left: 56px;
 }
 .image-with-text .list-options p {
   margin: 0;
@@ -45,7 +45,7 @@
 }
 
 .image-with-text .list-options-item.is-image {
-  padding-left: 56px;
+    padding-left: 56px;
 }
 
 .image-with-text .list-options-item--img {
