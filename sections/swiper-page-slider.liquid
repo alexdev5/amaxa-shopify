@@ -43,6 +43,9 @@
                             {% if section.settings.show_title %}
                                 <p class="slider-content--title">{{ title }}</p>
                             {% endif %}
+                            {% if block.settings.description != blank %}
+                                <p class="slider-content--description">{{ block.settings.description }}</p>
+                            {% endif %}
 
                             {% if section.settings.show_button %}
                                 <div>
@@ -203,6 +206,16 @@
           "label": "Select page"
         },
         {
+          "type": "text",
+          "id": "title",
+          "label": "Custom title (Instead of a page title)"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Desctiption"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Select image"
@@ -215,11 +228,6 @@
           "step": 1,
           "default": 0,
           "label": "Position '-x'"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Custom title (Instead of a page title)"
         },
         {
           "type": "url",
