@@ -183,6 +183,8 @@
       "settings": {
         "show_title": true,
         "show_button": false,
+        "navigation_enabled": true,
+        "pagination_enabled": true,
         "image_width": "full",
         "slide_card": true,
         "container_width": false,
