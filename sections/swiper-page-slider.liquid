@@ -57,9 +57,15 @@
             {% endfor %}
         </div>
     </div>
-  
+
+  {% if section.settings.navigation_enabled %}
     <button class="swiper-arrow swiper-button-next"></button>
     <button class="swiper-arrow swiper-button-prev"></button>
+  {% endif %}
+  
+  {% if section.settings.pagination_enabled %}
+      <ul class="swiper-pagination"></ul>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -78,6 +84,18 @@
       "id": "show_button",
       "default": false,
       "label": "Show button"
+    },
+    {
+      "type": "checkbox",
+      "id": "navigation_enabled",
+      "default": true,
+      "label": "Navigation enabled"
+    },
+    {
+      "type": "checkbox",
+      "id": "pagination_enabled",
+      "default": false,
+      "label": "Pagination enabled"
     },
     {
       "type": "select",
