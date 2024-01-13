@@ -10,7 +10,7 @@
 <div class="page-width-desktop slider-container">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
-        slide-image-{{ section.settings.image_width }}
+        {% if section.settings.images_height != 'default' %} slide-image-{{ section.settings.image_width }} {% endif %}
       "
          {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
          data-columns="{{ section.settings.slider_columns_desktop }}"
@@ -36,8 +36,8 @@
 
                 <div class="swiper-slide">
                     <div class="swiper-slide--inner">
-                        <div class="swiper-slide--image">
-                            <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt">
+                        <div class="swiper-slide--image image-height-{{ section.settings.images_height }} {% if section.settings.images_height != 'default' %} img-absolute {% endif %}">
+                            <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt" {% if block.settings.image_position > 0 %} style="left: -{{ block.settings.image_position }}%" {% endif %}>
                         </div>
                         <div class="swiper-slide--content slider-content">
                             {% if section.settings.show_title %}
@@ -100,7 +100,7 @@
     {
       "type": "select",
       "id": "image_width",
-      "label": "Full image width",
+      "label": "Image width",
       "options": [
         {
           "value": "small",
@@ -116,6 +116,22 @@
         }
       ],
       "default": "full"
+    },
+    {
+      "type": "select",
+      "id": "images_height",
+      "label": "Image height",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "normal",
+          "label": "350px"
+        }
+      ],
+      "default": "normal"
     },
     {
       "type": "checkbox",
@@ -190,6 +206,15 @@
           "type": "image_picker",
           "id": "image",
           "label": "Select image"
+        },
+        {
+          "type": "range",
+          "id": "image_position",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "default": 3,
+          "label": "Position '-x'"
         },
         {
           "type": "text",
