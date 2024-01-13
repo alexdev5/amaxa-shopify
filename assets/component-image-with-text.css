@@ -46,7 +46,9 @@
   margin-bottom: var(--offset-big);
   position: relative;
 }
-
+.image-with-text .list-options-item:last-child {
+  margin-bottom: 0;
+}
 .image-with-text .list-options-item.is-image {
     padding-left: 56px;
 }
