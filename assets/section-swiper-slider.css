@@ -38,9 +38,12 @@
   position: relative;
   overflow: hidden;
 }
+.swiper-slide--image.image-height-normal {
+  height: var(--slider-image-height-normal);
+}
 .swiper-slide--image.image-height-normal img {
   position: absolute;
-  height: var(--slider-image-height-normal);
+  height: 100%
   top: 0;
   left: 0;
 }
