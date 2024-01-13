@@ -13,8 +13,8 @@
 .swiper .swiper-slide {
   padding: 20px 16px;
 }
-.swiper .swiper-slide--inner {
-  
+.swiper .swiper-slide--inner > div{
+  border: 1px solid red;
 }
 
 .swiper.slides-card .swiper-slide--inner {
@@ -43,7 +43,7 @@
   color: rgb(46, 42, 57);
 }
 .swiper-slide--content {
-  padding-bottom: 12px;
+
 }
 .slider-container {
   position: relative;
