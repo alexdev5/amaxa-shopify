@@ -189,11 +189,24 @@
             "button_url": "",
             "button_label": ""
           }
+        },
+        "page_UnfRdk": {
+          "type": "page",
+          "settings": {
+            "page": "some-page",
+            "title": "",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
+            "image_position": 38,
+            "button_url": "",
+            "button_label": ""
+          }
         }
       },
       "block_order": [
         "template--20526495662414__026a83c5-ae34-4bef-a903-75c4317b34ab-page-1",
-        "page_ipVHmc"
+        "page_ipVHmc",
+        "page_UnfRdk"
       ],
       "settings": {
         "show_title": true,
