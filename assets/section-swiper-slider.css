@@ -32,6 +32,7 @@
 }
 .slide-image-full .swiper-slide--image {
   max-width: auto;
+  position: relative;
 }
 .slide-image-full .swiper-slide--image {
   max-width: auto;
