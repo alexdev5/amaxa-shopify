@@ -34,29 +34,37 @@
                 {% assign buttonLabel = block.settings.button_label %}
               {% endif %}
 
+              {% if section.settings.clickable %} 
+                <a href="" class="swiper-slide">
+              {% else %} 
                 <div class="swiper-slide">
-                    <div class="swiper-slide--inner">
-                        <div class="swiper-slide--image image-height-{{ section.settings.images_height }} {% if section.settings.images_height != 'default' %} child-absolute {% endif %}">
-                            <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt" {% if block.settings.image_position > 0 %} style="left: -{{ block.settings.image_position }}%" {% endif %}>
-                        </div>
-                        <div class="swiper-slide--content slider-content">
-                            {% if section.settings.show_title %}
-                                <p class="slider-content--title">{{ title }}</p>
-                            {% endif %}
-                            {% if block.settings.description != blank %}
-                                <p class="slider-content--description">{{ block.settings.description }}</p>
-                            {% endif %}
-
-                            {% if section.settings.show_button %}
-                                <div>
-                                    <a href="{{ buttonUrl }}" class="button button--primary">
-                                      {{ buttonLabel }}
-                                    </a>
-                                </div>
-                            {% endif %}
-                        </div>
+              {% endif %}
+              
+                    <div class="swiper-slide--image image-height-{{ section.settings.images_height }} {% if section.settings.images_height != 'default' %} child-absolute {% endif %}">
+                        <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt" {% if block.settings.image_position > 0 %} style="left: -{{ block.settings.image_position }}%" {% endif %}>
                     </div>
+                    <div class="swiper-slide--content slider-content">
+                        {% if section.settings.show_title %}
+                            <p class="slider-content--title">{{ title }}</p>
+                        {% endif %}
+                        {% if block.settings.description != blank %}
+                            <p class="slider-content--description">{{ block.settings.description }}</p>
+                        {% endif %}
+
+                        {% if section.settings.show_button %}
+                            <div>
+                                <a href="{{ buttonUrl }}" class="button button--primary">
+                                  {{ buttonLabel }}
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                
+              {% if section.settings.clickable %} 
+                </a>
+              {% else %} 
                 </div>
+              {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -76,6 +84,12 @@
   "name": "Swiper page slider",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "clickable",
+      "default": true,
+      "label": "Slide lickable"
+    },
     {
       "type": "checkbox",
       "id": "show_title",
