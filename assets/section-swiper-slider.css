@@ -34,11 +34,11 @@
   max-width: 100%;
   max-height: 160px;
 }
-.swiper-slide--image .child-absolute {
+.swiper-slide--image.child-absolute {
   position: relative;
   overflow: hidden;
 }
-.swiper-slide--image .image-height-normal img {
+.swiper-slide--image.image-height-normal img {
   position: absolute;
   height: var(--slider-image-height-normal);
   top: 0;
