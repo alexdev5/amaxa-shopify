@@ -170,16 +170,30 @@
           "type": "page",
           "settings": {
             "page": "man",
+            "title": "",
+            "description": "",
             "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
             "image_position": 3,
+            "button_url": "",
+            "button_label": ""
+          }
+        },
+        "page_ipVHmc": {
+          "type": "page",
+          "settings": {
+            "page": "woman",
             "title": "",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/index-page_1.jpg",
+            "image_position": 30,
             "button_url": "",
             "button_label": ""
           }
         }
       },
       "block_order": [
-        "template--20526495662414__026a83c5-ae34-4bef-a903-75c4317b34ab-page-1"
+        "template--20526495662414__026a83c5-ae34-4bef-a903-75c4317b34ab-page-1",
+        "page_ipVHmc"
       ],
       "settings": {
         "show_title": true,
