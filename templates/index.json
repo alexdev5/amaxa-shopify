@@ -171,6 +171,7 @@
           "settings": {
             "page": "man",
             "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
+            "image_position": 3,
             "title": "",
             "button_url": "",
             "button_label": ""
@@ -183,9 +184,10 @@
       "settings": {
         "show_title": true,
         "show_button": false,
-        "navigation_enabled": true,
+        "navigation_enabled": false,
         "pagination_enabled": true,
         "image_width": "full",
+        "images_height": "normal",
         "slide_card": true,
         "container_width": false,
         "slider_align": "align_middle",
