@@ -50,11 +50,15 @@
   max-width: auto;
   position: relative;
 }
+.swiper-slide--content > * {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(46, 42, 57);
+}
 .swiper .slider-content--title {
   font-size: calc(var(--font-heading-scale) * 1.5rem);
   font-weight: 500;
-  color: rgb(46, 42, 57);
-  margin-block: 10px;
+  color: #615E6A;
 }
 .swiper .title-font-size--normal {
   
@@ -64,9 +68,6 @@
 }
 .swiper-slide--content {
   padding: 0 var(--offset-normal) var(--offset-small);
-}
-.swiper-slide--content > * {
-  margin: 0;
 }
 .swiper-slide--content.content-align--center {
   text-align: center;
