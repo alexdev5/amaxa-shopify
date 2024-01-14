@@ -175,11 +175,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin-top: var(--spacing-sections-mobile);
 }*/
 
-@media screen and (min-width: 750px) {
+/*@media screen and (min-width: 750px) {
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
   }
-}
+}*/
 
 .element-margin-top {
   margin-top: 5rem;
