@@ -40,7 +40,14 @@
                 <div class="swiper-slide">
               {% endif %}
               
-                    <div class="swiper-slide--image image-height-{{ section.settings.images_height }} {% if section.settings.images_height != 'default' %} child-absolute {% endif %}">
+                    <div 
+                      class="swiper-slide--image image-height-{{ section.settings.images_height }} 
+                      {% if section.settings.images_height != 'default' %} child-absolute {% endif %}"
+                      style="
+                        {% if section.settings.background_image !=blank %}background: {{ section.settings.background_image }}{% endif %}
+                        {% if section.settings.background_content !=blank %}background: {{ section.settings.background_content }}{% endif %}
+                      "
+                    >
                         <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt" {% if block.settings.image_position > 0 %} style="left: -{{ block.settings.image_position }}%" {% endif %}>
                     </div>
                     <div class="swiper-slide--content slider-content">
