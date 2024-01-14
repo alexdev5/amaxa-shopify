@@ -63,7 +63,10 @@
   font-size: calc(var(--font-heading-scale) * 1.7rem);
 }
 .swiper-slide--content {
-  padding: 0 var(--offset-small) 1px var(--offset-small);
+  padding: 0 var(--offset-normal) var(--offset-small);
+}
+.swiper-slide--content > * {
+  margin: 0;
 }
 .swiper-slide--content.content-align--center {
   text-align: center;
