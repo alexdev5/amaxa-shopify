@@ -50,7 +50,7 @@
                     >
                         <img src="{{ block.settings.image | img_url: 'original' }}" alt="alt" {% if block.settings.image_position > 0 %} style="left: -{{ block.settings.image_position }}%" {% endif %}>
                     </div>
-                    <div class="swiper-slide--content slider-content">
+                    <div class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}">
                         {% if section.settings.show_title %}
                             <p class="slider-content--title">{{ title }}</p>
                         {% endif %}
@@ -102,6 +102,22 @@
       "id": "show_title",
       "default": true,
       "label": "Show title"
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Content align",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "checkbox",
@@ -172,6 +188,7 @@
     {
       "type": "select",
       "id": "slider_align",
+      "label": "Align container",
       "options": [
         {
           "value": "align_left",
@@ -182,8 +199,7 @@
           "label": "middle"
         }
       ],
-      "default": "align_middle",
-      "label": "Align container"
+      "default": "align_middle"
     },
     {
       "type": "select",
