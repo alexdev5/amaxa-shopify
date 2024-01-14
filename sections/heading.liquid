@@ -1,0 +1,99 @@
+{{ 'section-heading.css' | asset_url | stylesheet_tag }}
+<div class="page-width-desktop">
+  {% assign tag_name = section.settings.tag_name | default: 'h2' %}
+  {% assign align = section.settings.align | default: 'center' %}
+
+  {% if tag_name == 'h1' %}
+    <h1 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h1>
+  {% elsif tag_name == 'h2' %}
+    <h2 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h2>
+  {% elsif tag_name == 'h3' %}
+    <h3 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h3>
+  {% elsif tag_name == 'h4' %}
+    <h4 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h4>
+  {% elsif tag_name == 'h5' %}
+    <h5 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h5>
+  {% elsif tag_name == 'h6' %}
+    <h6 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h6>
+  {% else %}
+    <h2 style="text-align: {{ align }}">
+      {{ section.settings.header }}
+    </h2>
+  {% endif %}
+</div>
+{% schema %}
+{
+  "name": "heading",
+  "class": "section section-heading",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "select",
+      "id": "tag_name",
+      "label": "Tag name",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Align",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "center"
+    }
+  ]
+}
+{% endschema %}
