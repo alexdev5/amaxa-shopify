@@ -52,7 +52,7 @@
                     </div>
                     <div class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}">
                         {% if section.settings.show_title %}
-                            <p class="slider-content--title">{{ title }}</p>
+                            <p class="slider-content--title title-font-size--{{ section.settings.title_font_size }}">{{ title }}</p>
                         {% endif %}
                         {% if block.settings.description != blank %}
                             <p class="slider-content--description">{{ block.settings.description }}</p>
