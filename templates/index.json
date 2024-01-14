@@ -171,7 +171,7 @@
           "settings": {
             "page": "man",
             "title": "",
-            "description": "",
+            "description": "Desctiption",
             "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
             "image_position": 90,
             "button_url": "",
@@ -183,7 +183,7 @@
           "settings": {
             "page": "woman",
             "title": "",
-            "description": "",
+            "description": "Desctiption",
             "image": "shopify:\/\/shop_images\/index-page_1.jpg",
             "image_position": 42,
             "button_url": "",
@@ -195,7 +195,7 @@
           "settings": {
             "page": "some-page",
             "title": "",
-            "description": "",
+            "description": "Desctiption next",
             "image": "shopify:\/\/shop_images\/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
             "image_position": 38,
             "button_url": "",
@@ -212,7 +212,7 @@
         "clickable": true,
         "show_title": true,
         "title_font_size": "middle",
-        "content_align": "center",
+        "content_align": "left",
         "show_button": false,
         "navigation_enabled": false,
         "pagination_enabled": true,
