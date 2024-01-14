@@ -16,6 +16,7 @@
 }
 .swiper .swiper-slide {
   padding: 20px 16px;
+  text-decoration: none;
 }
 
 .swiper.slides-card .swiper-slide--inner {
@@ -52,7 +53,6 @@
 }
 .swiper-slide--content > * {
   margin: 0;
-  text-decoration: none!important;
   color: rgb(46, 42, 57);
 }
 .swiper .slider-content--title {
