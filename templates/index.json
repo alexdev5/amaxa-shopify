@@ -94,14 +94,14 @@
       "type": "swiper-slider",
       "settings": {
         "collections": "frontpage",
-        "image_width": "small_padding",
+        "image_width": "full",
         "slider_columns_desktop": 4,
         "is_item_title": true,
         "is_item_description": false,
         "slide_card": true,
         "container_width": true,
         "slider_align": "align_middle",
-        "slide_width": "310"
+        "slide_width": "400"
       }
     },
     "aa0320bf-7dfd-4903-be41-e45e98c13103": {
