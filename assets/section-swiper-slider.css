@@ -1,5 +1,7 @@
 :root {
   --slider-image-height-normal: 350px;
+  --title-color-primary: #2E2A39;
+  --title-color-secondary: #615E6A;
 }
 
 .swiper-container:not(.swiper-initialized) {
@@ -58,11 +60,11 @@
 .swiper .slider-content--title {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
   font-weight: 500;
-  color: #615E6A;
+  color: var(--title-color-primary);
 }
 .swiper .slider-content--description {
   font-size: calc(var(--font-heading-scale) * 1.4rem);
-  color: #615E6A;
+  color: var(--title-color-secondary);
 }
 .swiper .title-font-size--normal {
   
