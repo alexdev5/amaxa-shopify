@@ -56,6 +56,12 @@
   color: rgb(46, 42, 57);
   margin-block: 10px;
 }
+.swiper .title-font-size--normal {
+  
+}
+.swiper .title-font-size--middle {
+  font-size: calc(var(--font-heading-scale) * 1.7rem);
+}
 .swiper-slide--content {
   padding: 0 var(--offset-small) 1px var(--offset-small);
 }
