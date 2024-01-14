@@ -57,7 +57,7 @@
   margin-block: 10px;
 }
 .swiper-slide--content {
-  padding-block: var(--offset-small)
+  padding-bottom: var(--offset-small)
 }
 .swiper-slide--content.content-align-center {
   text-align: center;
