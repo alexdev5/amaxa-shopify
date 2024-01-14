@@ -39,7 +39,7 @@
               {% else %} 
                 <div class="swiper-slide">
               {% endif %}
-              
+                <div class="swiper-slide--inner">
                     <div 
                       class="swiper-slide--image image-height-{{ section.settings.images_height }} 
                       {% if section.settings.images_height != 'default' %} child-absolute {% endif %}"
@@ -66,7 +66,7 @@
                             </div>
                         {% endif %}
                     </div>
-                
+                </div>
               {% if section.settings.clickable %} 
                 </a>
               {% else %} 
