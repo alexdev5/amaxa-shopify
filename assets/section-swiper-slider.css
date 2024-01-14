@@ -60,6 +60,9 @@
   font-weight: 500;
   color: #615E6A;
 }
+.swiper .slider-content--desctiption {
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
+}
 .swiper .title-font-size--normal {
   
 }
