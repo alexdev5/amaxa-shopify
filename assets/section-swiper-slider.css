@@ -50,7 +50,9 @@
   max-width: auto;
   position: relative;
 }
-
+.swiper .swiper-slide--content {
+  padding-block: var(--offset-small)
+}
 .swiper .slider-content--title {
   font-size: calc(var(--font-heading-scale) * 1.5rem);
   font-weight: 500;
