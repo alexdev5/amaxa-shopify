@@ -57,7 +57,7 @@
   margin-block: 10px;
 }
 .swiper-slide--content {
-  padding: 0 var(--offset-small) var(--offset-small);
+  padding: 0 var(--offset-small) 1px var(--offset-small);
 }
 .swiper-slide--content.content-align--center {
   text-align: center;
