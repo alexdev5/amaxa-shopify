@@ -62,6 +62,7 @@
 }
 .swiper .slider-content--description {
   font-size: calc(var(--font-heading-scale) * 1.4rem);
+  color: #615E6A;
 }
 .swiper .title-font-size--normal {
   
