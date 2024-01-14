@@ -163,6 +163,29 @@
         "padding_bottom": 52
       }
     },
+    "rich_text_hhRCip": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NLJPVM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop by Need",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NLJPVM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "026a83c5-ae34-4bef-a903-75c4317b34ab": {
       "type": "swiper-page-slider",
       "blocks": {
@@ -352,6 +375,7 @@
     "c50ba600-ae3c-4a63-abe8-1566e0f0b47d",
     "d2fad9d1-7173-41ed-9227-be7e3896c5ea",
     "aa0320bf-7dfd-4903-be41-e45e98c13103",
+    "rich_text_hhRCip",
     "026a83c5-ae34-4bef-a903-75c4317b34ab",
     "image_with_text_3dXjRB",
     "dec28744-d94a-4efa-8a11-8b18edd4ac32",
