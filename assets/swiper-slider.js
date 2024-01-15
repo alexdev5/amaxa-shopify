@@ -10,10 +10,9 @@ function swiperSliderInit() {
     const columns = slider.dataset.columns ?? 3
     
       new Swiper(slider, {
-        //slidesPerView: columns,
-        slidesPerView: 4,
+        slidesPerView: columns,
         spaceBetween: 0,
-        slidesPerColumn: 1
+        slidesPerColumn: 1,
         watchOverflow: true,
         navigation: {
           nextEl: ".swiper-button-next",
