@@ -2,7 +2,7 @@
 {% assign slide_width = section.settings.slide_width | times: 1 %}
 
 {% if section.settings.container_width %}
-  {%- assign containerWidth = 100 | times: 1 -%}
+    {%- assign containerWidth = 0 | times: 1 -%}
 {% else %}
   {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
@@ -131,7 +131,7 @@
     {
       "type": "select",
       "id": "content_align",
-      "label": "Content align",
+      "label": "Content align in slides",
       "options": [
         {
           "value": "left",
@@ -224,7 +224,7 @@
       "type": "checkbox",
       "id": "container_width",
       "default": false,
-      "label": "Container width"
+      "label": "Slider full container width"
     },
     {
       "type": "select",
