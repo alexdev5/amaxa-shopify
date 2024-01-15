@@ -154,4 +154,7 @@
 .swiper-products-slider .swiper-slide--content {
   padding: var(--offset-normal) var(--offset-normal);
 }
+.swiper-products-slider  .swiper-slide--image {
+  padding: var(--offset-small)
+}
 
