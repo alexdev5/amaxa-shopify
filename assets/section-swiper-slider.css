@@ -66,8 +66,8 @@
   font-size: calc(var(--font-heading-scale) * 1.4rem);
   color: var(--title-color-secondary);
 }
-.swiper .title-font-size--normal {
-  
+.swiper .title-font-size--small {
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
 }
 .swiper .title-font-size--middle {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
