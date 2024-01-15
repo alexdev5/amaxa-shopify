@@ -19,11 +19,6 @@
     <div class="swiper-wrapper">
       {% for product in collections [section.settings.collections].products %}
 
-      {% assign description = product.description %}
-      {% if section.settings.description != blank %}
-        {% assign description = section.settings.description %}
-      {% endif %}
-
       {% assign buttonLabel = 'Buy' %}
       {% if section.settings.button_label != blank %}
         {% assign buttonLabel = section.settings.button_label %}
@@ -52,7 +47,7 @@
 
               {% if section.settings.show_description %}
                 <p class="slider-content--description">
-                  {{ description }}
+                  {{ product.description }}
                 </p>
               {% endif %}
 
@@ -160,11 +155,6 @@
       "id": "show_description",
       "default": false,
       "label": "Show description"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "Custom description"
     },
     {
       "type": "checkbox",
