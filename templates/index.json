@@ -229,10 +229,10 @@
           "type": "page",
           "settings": {
             "page": "",
-            "title": "Title 2",
+            "title": "Some pate 2",
             "description": "Description 2",
             "image": "shopify:\/\/shop_images\/fertility-issues-miofolic.jpg",
-            "image_position": 0,
+            "image_position": 21,
             "button_url": "",
             "button_label": ""
           }
