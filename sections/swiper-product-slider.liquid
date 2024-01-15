@@ -10,8 +10,7 @@
 <div class="page-width-desktop slider-container swiper-products-slider">
   <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
-        {% if section.settings.images_height != 'default' %} slide-image-{{ section.settings.image_width }} {% endif %}
-      "
+  "
       {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
        data-columns="{{ section.settings.slider_columns_desktop }}"
        data-slide-width="{{ slide_width }}"
@@ -31,7 +30,7 @@
           {% endif %}
           <div class="swiper-slide--inner">
             <div
-                class="swiper-slide--image"
+                class="swiper-slide--image image-height-{{ section.settings.image_container_height }}"
                 style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
             >
               <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
@@ -173,8 +172,8 @@
     },
     {
       "type": "select",
-      "id": "image_width",
-      "label": "Image width",
+      "id": "image_container_height",
+      "label": "Image container height",
       "options": [
         {
           "value": "small",
@@ -185,11 +184,11 @@
           "label": "normal"
         },
         {
-          "value": "full",
-          "label": "full"
+          "value": "large",
+          "label": "large"
         }
       ],
-      "default": "full"
+      "default": "normal"
     },
     {
       "type": "checkbox",
