@@ -150,3 +150,8 @@
 
 }
 
+/* Products slider */
+.swiper-products-slider .swiper-slide--content {
+  padding: var(--offset-normal) var(--offset-normal);
+}
+
