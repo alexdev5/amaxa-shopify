@@ -30,7 +30,7 @@
           {% endif %}
           <div class="swiper-slide--inner">
             <div
-                class="swiper-slide--image image-height-{{ section.settings.image_container_height }}"
+                class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
                 style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
             >
               <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
