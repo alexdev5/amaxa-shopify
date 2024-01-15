@@ -77,7 +77,13 @@
   
 }
 .swiper-slide--content {
-  padding: 0 var(--offset-normal) var(--offset-small);
+  padding: var(--offset-normal);
+}
+.swiper-slide--content.padding-normal {
+  padding: var(--offset-normal);
+}
+.swiper-slide--content.padding-middle {
+  padding: var(--offset-middle) var(--offset-normal);
 }
 .swiper-slide--content.content-align--center {
   text-align: center;
