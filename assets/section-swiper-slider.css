@@ -77,7 +77,7 @@
   
 }
 .swiper-slide--content {
-  padding: var(--offset-normal);
+  padding: 0 var(--offset-normal) var(--offset-normal);
 }
 .swiper-slide--content.padding-normal {
   padding: var(--offset-normal);
