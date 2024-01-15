@@ -147,7 +147,7 @@
 }
 
 .swiper.slide-image-full .swiper-slide--image img{
-  max-height: none;
+  max-height: 100%;
 }
 
 /* Products slider */
