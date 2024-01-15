@@ -90,20 +90,6 @@
         "padding_bottom": 32
       }
     },
-    "d2fad9d1-7173-41ed-9227-be7e3896c5ea": {
-      "type": "swiper-slider",
-      "settings": {
-        "collections": "frontpage",
-        "image_width": "full",
-        "slider_columns_desktop": 4,
-        "is_item_title": true,
-        "is_item_description": false,
-        "slide_card": true,
-        "container_width": true,
-        "slider_align": "align_middle",
-        "slide_width": "400"
-      }
-    },
     "swiper_product_slider_DwLC3p": {
       "type": "swiper-product-slider",
       "settings": {
@@ -409,7 +395,6 @@
   "order": [
     "f949b70d-6e3f-4a1c-9481-a3f6199b5444",
     "c50ba600-ae3c-4a63-abe8-1566e0f0b47d",
-    "d2fad9d1-7173-41ed-9227-be7e3896c5ea",
     "swiper_product_slider_DwLC3p",
     "aa0320bf-7dfd-4903-be41-e45e98c13103",
     "rich_text_hhRCip",
