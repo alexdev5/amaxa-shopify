@@ -107,7 +107,7 @@
     "swiper_product_slider_DwLC3p": {
       "type": "swiper-product-slider",
       "settings": {
-        "collections": "slick-slider-home",
+        "collections": "frontpage",
         "clickable": true,
         "show_price": true,
         "title_font_size": "normal",
@@ -115,7 +115,6 @@
         "show_button": false,
         "button_label": "",
         "show_description": false,
-        "description": "",
         "navigation_enabled": true,
         "pagination_enabled": false,
         "image_width": "full",
@@ -124,7 +123,7 @@
         "container_width": false,
         "slider_align": "align_middle",
         "slide_width": "310",
-        "slider_columns_desktop": 3,
+        "slider_columns_desktop": 5,
         "background_image": "",
         "background_content": ""
       }
