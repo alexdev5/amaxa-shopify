@@ -52,9 +52,8 @@
 
               {% if section.settings.show_price %}
                 <p class="slider-content--price">
-                  {{ 'products.product.price.regular_price' | t }}
+                  {% render 'price', show_compare_at_price: true %}
                 </p>
-              {% render 'price', show_compare_at_price: true %}
               {% endif %}
 
               {% if section.settings.show_button %}
