@@ -67,7 +67,7 @@
   color: var(--title-color-primary);
 }
 .swiper .title-font-size--small {
-  font-size: calc(var(--font-heading-scale) * 1.3rem);
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
 }
 .swiper .title-font-size--middle {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
@@ -146,8 +146,8 @@
   padding-inline: var(--offset-normal);
 }
 
-.swiper.slide-image-full {
-
+.swiper.slide-image-full .swiper-slide--image img{
+  max-height: none;
 }
 
 /* Products slider */
