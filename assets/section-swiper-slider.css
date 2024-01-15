@@ -67,11 +67,14 @@
   color: var(--title-color-secondary);
 }
 .swiper .title-font-size--small {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
+  calc(var(--font-heading-scale) * 1.3rem);
 }
 .swiper .title-font-size--middle {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
   font-weight: 600;
+}
+.swiper .slider-content--price {
+  
 }
 .swiper-slide--content {
   padding: 0 var(--offset-normal) var(--offset-small);
