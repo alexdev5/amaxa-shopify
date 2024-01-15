@@ -31,8 +31,7 @@
           {% endif %}
           <div class="swiper-slide--inner">
             <div
-                class="swiper-slide--image image-height-{{ section.settings.images_height }}
-                      {% if section.settings.images_height != 'default' %} child-absolute {% endif %}"
+                class="swiper-slide--image"
                 style="
                 {% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}
                 {% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %}
@@ -188,22 +187,6 @@
         }
       ],
       "default": "full"
-    },
-    {
-      "type": "select",
-      "id": "images_height",
-      "label": "Image height",
-      "options": [
-        {
-          "value": "default",
-          "label": "default"
-        },
-        {
-          "value": "normal",
-          "label": "350px"
-        }
-      ],
-      "default": "normal"
     },
     {
       "type": "checkbox",
