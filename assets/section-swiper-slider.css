@@ -57,17 +57,17 @@
   margin: 0;
   color: rgb(46, 42, 57);
 }
+.swiper .slider-content--description {
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
+  color: var(--title-color-secondary);
+}
 .swiper .slider-content--title {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
   font-weight: 500;
   color: var(--title-color-primary);
 }
-.swiper .slider-content--description {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
-  color: var(--title-color-secondary);
-}
 .swiper .title-font-size--small {
-  calc(var(--font-heading-scale) * 1.3rem);
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
 }
 .swiper .title-font-size--middle {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
