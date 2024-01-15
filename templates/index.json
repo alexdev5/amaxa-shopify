@@ -224,12 +224,25 @@
             "button_url": "",
             "button_label": ""
           }
+        },
+        "page_w3gFR8": {
+          "type": "page",
+          "settings": {
+            "page": "",
+            "title": "Title 2",
+            "description": "Description 2",
+            "image": "shopify:\/\/shop_images\/fertility-issues-miofolic.jpg",
+            "image_position": 0,
+            "button_url": "",
+            "button_label": ""
+          }
         }
       },
       "block_order": [
         "template--20526495662414__026a83c5-ae34-4bef-a903-75c4317b34ab-page-1",
         "page_ipVHmc",
-        "page_UnfRdk"
+        "page_UnfRdk",
+        "page_w3gFR8"
       ],
       "settings": {
         "clickable": true,
