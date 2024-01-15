@@ -7,7 +7,7 @@
     {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
 {% endif %}
 
-<div class="page-width-desktop slider-container">
+<div class="page-width-desktop slider-container swiper-page-slider">
     <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
         {% if section.settings.slide_card %} slides-card {% endif %}
         {% if section.settings.images_height != 'default' %} slide-image-{{ section.settings.image_width }} {% endif %}
