@@ -31,16 +31,15 @@
           <div class="swiper-slide--inner">
             <div
                 class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
-                style="
-                  {% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}
-                  {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
-                "
+                style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
             >
               <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
             </div>
             <div 
               class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}"
-              style="{% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %}"
+              style="{% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %} 
+                  {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
+              "
               >
               <p class="slider-content--title title-font-size--{{ section.settings.title_font_size }}">
                 {{ product.title }}
