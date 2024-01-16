@@ -103,7 +103,7 @@
         "show_description": false,
         "navigation_enabled": true,
         "pagination_enabled": false,
-        "image_container_height": "normal",
+        "image_container_height": "small",
         "slide_card": true,
         "container_width": true,
         "slider_align": "align_middle",
