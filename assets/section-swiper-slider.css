@@ -74,8 +74,8 @@
   font-weight: 600;
 }
 
-.swiper .slider-content--price {
-
+.swiper .slider-content--title + .slider-content--price {
+  margin-top: 4px;
 }
 
 .swiper-slide--content {
