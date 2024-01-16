@@ -166,7 +166,14 @@
   max-height: 100%;
 }
 /* ^ outdated */
-
+.swiper .swiper-pagination-horizontal {
+  bottom: 0;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 /* Page slider */
 .swiper-page-slider .swiper-slide--image.child-absolute {
   position: relative;
