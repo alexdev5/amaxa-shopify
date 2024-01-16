@@ -212,7 +212,6 @@
   padding: var(--offset-small);
 }
 .swiper-products-slider .swiper-slide--image img {
-  padding: var(--offset-small);
   max-width: 100%;
   max-height: 100%;
 }
