@@ -31,7 +31,10 @@
           <div class="swiper-slide--inner">
             <div
                 class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
-                style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
+                style="
+                  {% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}
+                  {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
+                "
             >
               <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
             </div>
@@ -157,6 +160,12 @@
       "id": "show_description",
       "default": false,
       "label": "Show description"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_offset_top_none",
+      "default": false,
+      "label": "Remove content top offset"
     },
     {
       "type": "checkbox",
