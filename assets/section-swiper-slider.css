@@ -167,7 +167,7 @@
 }
 /* ^ outdated */
 
-.swiper .swiper-pagination-horizontal {
+.swiper .swiper-pagination {
   bottom: 0;
   top: auto;
   left: 0;
@@ -175,6 +175,7 @@
   margin: 0;
   padding: 0;
 }
+
 .swiper.pagination-enabled {
   padding-bottom: 27px;
 }
