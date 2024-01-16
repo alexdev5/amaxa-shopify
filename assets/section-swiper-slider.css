@@ -167,7 +167,7 @@
 }
 /* ^ outdated */
 
-.swiper .swiper-pagination {
+.slider-container .swiper-pagination {
   bottom: 0;
   top: auto;
   left: 0;
@@ -176,7 +176,7 @@
   padding: 0;
 }
 
-.swiper.pagination-enabled {
+.slider-container.pagination-enabled {
   padding-bottom: 27px;
 }
 
