@@ -1,5 +1,55 @@
 {
   "sections": {
+    "custom_image_banner_kYaBDb": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "page_QQUPTt": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementor-placeholder-image.webp",
+            "image_position": 0,
+            "button_label": "Women",
+            "button_url": ""
+          }
+        },
+        "page_XNbebd": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementor-placeholder-image.webp",
+            "image_position": 0,
+            "button_label": "Man",
+            "button_url": ""
+          }
+        },
+        "page_nKheen": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementor-placeholder-image.webp",
+            "image_position": 0,
+            "button_label": "Kids",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_QQUPTt",
+        "page_XNbebd",
+        "page_nKheen"
+      ],
+      "settings": {
+        "image_clickable": false,
+        "heading": "Premium Quality",
+        "heading_size": "h1",
+        "container_height": "medium",
+        "box_shadow": true,
+        "full_width": true,
+        "offset_between_images": "medium",
+        "border_between_images": false,
+        "border_radius": 0,
+        "background_image": "",
+        "border_color": ""
+      }
+    },
     "f949b70d-6e3f-4a1c-9481-a3f6199b5444": {
       "type": "image-banner",
       "blocks": {
@@ -390,6 +440,7 @@
     }
   },
   "order": [
+    "custom_image_banner_kYaBDb",
     "f949b70d-6e3f-4a1c-9481-a3f6199b5444",
     "c50ba600-ae3c-4a63-abe8-1566e0f0b47d",
     "swiper_product_slider_DwLC3p",
