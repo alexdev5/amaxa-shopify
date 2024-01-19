@@ -1,0 +1,37 @@
+:root {
+
+}
+
+.images-banner {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  align-items: center;
+}
+.images-banner .images-banner--title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
+  font-size: calc(5em + 1vmin);
+}
+.images-banner .images-banner--image {
+  height: calc(70vh);
+  position: relative;
+  object-fit: cover;
+  background-position-y: 0;
+  background-position-x: center;
+}
+.images-banner .images-banner--buttons {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
