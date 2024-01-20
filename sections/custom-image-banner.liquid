@@ -10,7 +10,7 @@
       {% if section.settings.offset_between_images != blank %} offset-{{ section.settings.offset_between_images }}{% endif %}
       {% if section.settings.border_between_images %} border {% endif %}
     "
-    style="{% if section.settings.background_container != blank %}background: {{ section.settings.background_container }}{% endif %}"
+    style="{% if section.settings.margin_bottom > 0 %}margin-bototm: {{ section.settings.margin_bottom }}px{% endif %}"
 >
   {% for block in section.blocks %}
     <div
@@ -31,7 +31,7 @@
     </div>
   {% endfor %}
 
-  <h1 class="images-banner--title {{ block.settings.heading_size }}">
+  <h1 class="images-banner--title {{ section.settings.heading_size }}">
     {{ section.settings.heading }}
   </h1>
 </div>
@@ -150,6 +150,15 @@
       "step": 1,
       "default": 0,
       "label": "Border radius all images"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 10,
+      "step": 2,
+      "default": 0,
+      "label": "Margin bottom"
     },
     {
       "type": "color_background",

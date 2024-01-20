@@ -27,9 +27,9 @@
 .images-banner .images-banner--image {
   height: var(--banner-image-height-small);
   position: relative;
-  object-fit: cover;
   background-position-y: 0;
   background-position-x: center;
+  background-size: cover;
 }
 .images-banner .images-banner--buttons {
   position: absolute;
