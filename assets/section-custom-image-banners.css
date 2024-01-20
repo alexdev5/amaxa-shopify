@@ -1,5 +1,7 @@
 :root {
-
+  --banner-image-height-small: 300px;
+  --banner-image-height-medium: 400px;
+  --banner-image-height-large: 600px;
 }
 
 .images-banner {
@@ -20,9 +22,10 @@
   color: #fff;
   text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
   font-size: calc(5em + 1vmin);
+  margin: 0;
 }
 .images-banner .images-banner--image {
-  height: calc(70vh);
+  height: var(--banner-image-height-small);
   position: relative;
   object-fit: cover;
   background-position-y: 0;
@@ -30,8 +33,17 @@
 }
 .images-banner .images-banner--buttons {
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   left: 0;
   width: 100%;
   text-align: center;
+}
+.images-banner-height--small .images-banner--image{
+  height: var(--banner-image-height-small);
+}
+.images-banner-height--medium .images-banner--image{
+  height: var(--banner-image-height-medium);
+}
+.images-banner-height--large .images-banner--image{
+  height: var(--banner-image-height-large);
 }
