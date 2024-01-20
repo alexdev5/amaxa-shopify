@@ -17,7 +17,7 @@
     <div
         class="images-banner--image"
         style="
-           background-image: url("{{- block.settings.image  | img_url: 'original' | json-}}");
+           background-image: url("{{- block.settings.image  | img_url: 'original' -}}");
           {%- if section.settings.border_radius > 0 -%}border-radius: {{ section.settings.border_radius }}px; {%- endif -%}
           {%- if block.settings.image_position > 0 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
         ">
