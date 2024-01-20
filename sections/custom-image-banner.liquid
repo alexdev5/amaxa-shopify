@@ -20,6 +20,8 @@
           {%- if section.settings.border_radius > 0 -%}border-radius: {{ section.settings.border_radius }}px; {%- endif -%}
           {%- if block.settings.image_position > 0 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
         ">
+      <img srs="{{ block.settings.image  | image_url: 'original' }}" />
+      
       {% if block.settings.button_label != blank %}
         <div class="images-banner--buttons">
           <a href="{{ block.settings.button_url }}" class="button button--primary">
