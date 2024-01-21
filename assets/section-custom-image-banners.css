@@ -69,7 +69,10 @@
   --banner-image-title-font-size-base: 4rem;
 }
 .images-banner .images-banner--image {
-  height: var(--banner-image-height-small);
+  /*height: var(--banner-image-height-small);*/
+  height: calc(30vh + 10vw);
+  max-height: 500px;
+  min-height: 340px;
   position: relative;
   background-position-y: 0;
   background-position-x: center;

@@ -224,4 +224,7 @@
 .swiper-products-slider .swiper-slide--image.image-height--large {
   height: var(--slide-img-container-height-large);
 }
-
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+}

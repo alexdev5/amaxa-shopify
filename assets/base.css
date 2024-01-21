@@ -18,6 +18,15 @@
   --section-margin-block-end: 50px;
   --section-margin-block-end-middle: 70px;
   --section-margin-block-end-big: 100px;
+
+  --color-primary: #F6F6F6;
+  --color-secendary: #F6F6F6;
+
+  --breckpoint-xl: 1200px;
+  --breckpoint-lg: 992px;
+  --breckpoint-md: 768px;
+  --breckpoint-xs: 576px;
+  --breckpoint-sm: 375px;
 }
 
 .product-card-wrapper .card,

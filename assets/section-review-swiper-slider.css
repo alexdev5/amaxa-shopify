@@ -1,0 +1,27 @@
+:root {
+  --review-slider-height-default: 275px;
+}
+
+.swiper-review-slider .swiper-slide--inner {
+  background: var(--color-secendary);
+  border-radius: 4px;
+  height: var(--review-slider-height-default);
+}
+.swiper-review-slider .slide--content {
+
+}
+.swiper-review-slider .review-content {
+  display: block;
+  padding: 10px 5px;
+  overflow-y: auto;
+  height: 180px;
+}
+.swiper-review-slider .slider-content--stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.swiper-review-slider .slider-content--stars svg {
+  width: 24px;
+  height: 24px;
+}
