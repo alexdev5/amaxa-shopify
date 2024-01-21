@@ -9,8 +9,13 @@
       {% if section.settings.full_width %} images-banner-shadow{% endif %}
       {% if section.settings.offset_between_images != blank %} offset-{{ section.settings.offset_between_images }}{% endif %}
       {% if section.settings.border_between_images %} border {% endif %}
+      {% if section.settings.margin_top != blank %} margin-top--{{ section.settings.margin_top }} {% endif %}
+      {% if section.settings.margin_bottom != blank %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}
     "
-    style="{% if section.settings.margin_bottom > 0 %}margin-bototm: {{ section.settings.margin_bottom }}px{% endif %}"
+    style="
+        {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+        {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
+    "
 >
   {% for block in section.blocks %}
     <div
@@ -23,7 +28,7 @@
       
       {% if block.settings.button_label != blank %}
         <div class="images-banner--buttons">
-          <a href="{{ block.settings.button_url }}" class="button button--primary">
+          <a href="{{ block.settings.button_url }}" class="button {{ section.settings.button_type }}">
             {{ block.settings.button_label }}
           </a>
         </div>
@@ -75,6 +80,66 @@
       ],
       "default": "h1",
       "label": "H1"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Button type",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "button--secondary"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "label": "Margin top",
+      "options": [
+        {
+          "value": "",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "default"
     },
     {
       "type": "select",
@@ -153,9 +218,9 @@
     },
     {
       "type": "range",
-      "id": "margin_bottom",
+      "id": "margin_bottom_custom",
       "min": 0,
-      "max": 10,
+      "max": 100,
       "step": 2,
       "default": 0,
       "label": "Margin bottom"
@@ -167,8 +232,8 @@
     },
     {
       "type": "color_background",
-      "id": "border_color",
-      "label": "Border color"
+      "id": "background_container",
+      "label": "Background container"
     }
   ],
   "blocks": [

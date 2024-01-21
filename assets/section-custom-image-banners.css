@@ -2,6 +2,7 @@
   --banner-image-height-small: 300px;
   --banner-image-height-medium: 400px;
   --banner-image-height-large: 600px;
+  --banner-image-title-font-size-base: 7rem;
 }
 
 .images-banner {
@@ -11,6 +12,27 @@
   position: relative;
   align-items: center;
 }
+
+/* Offsets */
+.images-banner.margin-top--default {
+  margin-block-start: var(--section-margin-block-start);
+}
+.images-banner.margin-top--middle {
+  margin-block-start: var(--section-margin-block-start-middle);
+}
+.images-banner.margin-top--big {
+  margin-block-start: var(--section-margin-block-start-big);
+}
+.images-banner.margin-bottom--default {
+  margin-block-start: var(--section-margin-block-end);
+}
+.images-banner.margin-bottom--middle {
+  margin-block-start: var(--section-margin-block-end-middle);
+}
+.images-banner.margin-bottom--big {
+  margin-block-start: var(--section-margin-block-end-big);
+}
+
 .images-banner .images-banner--title {
   position: absolute;
   text-align: center;
@@ -21,8 +43,17 @@
   font-weight: 700;
   color: #fff;
   text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
-  font-size: calc(5em + 1vmin);
+  font-size: calc(var(--banner-image-title-font-size-base) + 1vmin);
   margin: 0;
+}
+.images-banner--title.h2 {
+  --banner-image-title-font-size-base: 6rem;
+}
+.images-banner--title.h3 {
+  --banner-image-title-font-size-base: 5rem;
+}
+.images-banner--title.h4 {
+  --banner-image-title-font-size-base: 4rem;
 }
 .images-banner .images-banner--image {
   height: var(--banner-image-height-small);

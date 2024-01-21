@@ -10,6 +10,14 @@
   --offset-normal: 16px;
   --offset-middle: 24px;
   --offset-big: 32px;
+
+  --section-margin-block-start: 46px;
+  --section-margin-block-start-middle: 60px;
+  --section-margin-block-start-big: 72px;
+
+  --section-margin-block-end: 46px;
+  --section-margin-block-end-middle: 60px;
+  --section-margin-block-end-big: 72px;
 }
 
 .product-card-wrapper .card,
