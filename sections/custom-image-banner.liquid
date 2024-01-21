@@ -2,20 +2,15 @@
 
 <div
     id="Banner-{{ section.id }}"
-    class="
-      images-banner
+    class="images-banner
       {% unless section.settings.full_width %} page-width-desktop{% endunless %}
       {% if section.settings.container_height != blank %} images-banner-height--{{ section.settings.container_height }}{% endif %}
       {% if section.settings.full_width %} images-banner-shadow{% endif %}
       {% if section.settings.offset_between_images != blank %} offset-{{ section.settings.offset_between_images }}{% endif %}
       {% if section.settings.border_between_images %} border {% endif %}
       {% if section.settings.margin_top != blank %} margin-top--{{ section.settings.margin_top }} {% endif %}
-      {% if section.settings.margin_bottom != blank %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}
-    "
-    style="
-        {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
-        {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
-    "
+      {% if section.settings.margin_bottom != blank %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
+    style="{% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %} {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}"
 >
   {% for block in section.blocks %}
     <div
