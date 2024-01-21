@@ -40,14 +40,18 @@
         "image_clickable": false,
         "heading": "Premium Quality",
         "heading_size": "h1",
+        "button_type": "button--secondary",
+        "margin_top": "none",
+        "margin_bottom": "big",
         "container_height": "medium",
         "box_shadow": true,
         "full_width": true,
-        "offset_between_images": "medium",
+        "offset_between_images": "normal",
         "border_between_images": false,
-        "border_radius": 0,
+        "border_radius": 20,
+        "margin_bottom_custom": 0,
         "background_image": "",
-        "border_color": ""
+        "background_container": ""
       }
     },
     "f949b70d-6e3f-4a1c-9481-a3f6199b5444": {
