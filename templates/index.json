@@ -42,7 +42,7 @@
         "heading_size": "h1",
         "button_type": "button--secondary",
         "margin_top": "none",
-        "margin_bottom": "big",
+        "margin_bottom": "none",
         "container_height": "medium",
         "box_shadow": true,
         "full_width": true,
@@ -88,6 +88,7 @@
         "template--20325051433294__f949b70d-6e3f-4a1c-9481-a3f6199b5444-text-1",
         "template--20325051433294__f949b70d-6e3f-4a1c-9481-a3f6199b5444-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/cute-family-playing-in-a-summer-field.jpg",
         "image_overlay_opacity": 20,
