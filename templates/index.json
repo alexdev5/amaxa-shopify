@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/elementor-placeholder-image.webp",
             "image_position": 0,
-            "button_label": "Man",
+            "button_label": "Men",
             "button_url": ""
           }
         },
@@ -38,7 +38,7 @@
       ],
       "settings": {
         "image_clickable": false,
-        "heading": "Premium Quality",
+        "heading": "",
         "heading_size": "h1",
         "button_type": "button--secondary",
         "margin_top": "none",
