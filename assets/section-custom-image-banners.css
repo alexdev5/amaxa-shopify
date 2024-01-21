@@ -24,13 +24,13 @@
   margin-block-start: var(--section-margin-block-start-big);
 }
 .images-banner.margin-bottom--default {
-  margin-block-start: var(--section-margin-block-end);
+  margin-block-end: var(--section-margin-block-end);
 }
 .images-banner.margin-bottom--middle {
-  margin-block-start: var(--section-margin-block-end-middle);
+  margin-block-end: var(--section-margin-block-end-middle);
 }
 .images-banner.margin-bottom--big {
-  margin-block-start: var(--section-margin-block-end-big);
+  margin-block-end: var(--section-margin-block-end-big);
 }
 
 .images-banner .images-banner--title {
