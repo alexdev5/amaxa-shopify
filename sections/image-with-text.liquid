@@ -120,7 +120,7 @@
                         {% else %}
                           href="{{ block.settings.button_link }}"
                         {% endif %}
-                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        class="button {{ section.settings.button_type }}"
                         {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -280,6 +280,22 @@
       ],
       "default": "no-overlap",
       "label": "t:sections.image-with-text.settings.content_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Button type",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "button--secondary"
     },
     {
       "type": "color_scheme",
