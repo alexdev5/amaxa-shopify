@@ -33,6 +33,19 @@
   margin-block-end: var(--section-margin-block-end-big);
 }
 
+.images-banner.offset-small {
+  gap: 3px;
+}
+.images-banner.offset-normal {
+  gap: 6px;
+}
+.images-banner.offset-medium {
+  gap: 9px;
+}
+.images-banner.offset-big {
+  gap: 12px;
+}
+
 .images-banner .images-banner--title {
   position: absolute;
   text-align: center;

@@ -6,7 +6,7 @@
       {% unless section.settings.full_width %} page-width-desktop{% endunless %}
       {% if section.settings.container_height != blank %} images-banner-height--{{ section.settings.container_height }}{% endif %}
       {% if section.settings.full_width %} images-banner-shadow{% endif %}
-      {% if section.settings.offset_between_images != blank %} offset-{{ section.settings.offset_between_images }}{% endif %}
+      {% if section.settings.offset_between_images != 'none' %} offset-{{ section.settings.offset_between_images }}{% endif %}
       {% if section.settings.border_between_images %} border {% endif %}
       {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
       {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
@@ -181,7 +181,7 @@
       "label": "Offset between images",
       "options": [
         {
-          "value": "",
+          "value": "none",
           "label": "None"
         },
         {
@@ -197,11 +197,11 @@
           "label": "Medium"
         },
         {
-          "value": "large",
-          "label": "Large"
+          "value": "big",
+          "label": "Big"
         }
       ],
-      "default": ""
+      "default": "none"
     },
     {
       "type": "checkbox",
@@ -213,7 +213,7 @@
       "type": "range",
       "id": "border_radius",
       "min": 0,
-      "max": 20,
+      "max": 60,
       "step": 1,
       "default": 0,
       "label": "Border radius all images"
