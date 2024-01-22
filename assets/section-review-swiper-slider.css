@@ -34,11 +34,11 @@
   stroke: #FABF3A;
   fill: #FABF3A;
 }
-.swiper-review-slider .stars-filled--4 svg:nth-child(-n+4) path path {
+.swiper-review-slider .stars-filled--4 svg:nth-child(-n+4) path {
   stroke: #FABF3A;
   fill: #FABF3A;
 }
-.swiper-review-slider .stars-filled--3 svg:nth-child(-n+3) path path {
+.swiper-review-slider .stars-filled--3 svg:nth-child(-n+3) path {
   stroke: #FABF3A;
   fill: #FABF3A;
 }
