@@ -29,3 +29,9 @@
 .swiper-review-slider .swiper-slide--content {
   padding-top: var(--offset-small);
 }
+.swiper-review-slider .slider-content--title-desc {
+  line-height: 1;
+}
+.swiper-review-slider .slider-content--title {
+  line-height: 1.4;
+}
