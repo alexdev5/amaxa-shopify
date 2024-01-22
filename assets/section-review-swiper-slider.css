@@ -7,14 +7,15 @@
   border-radius: 4px;
   height: var(--review-slider-height-default);
 }
-.swiper-review-slider .slide--content {
 
-}
 .swiper-review-slider .review-content {
   display: block;
-  padding: 10px 5px;
+  padding-block: 10px;
   overflow-y: auto;
   height: 180px;
+}
+.swiper-review-slider .review-content p {
+  margin: 0;
 }
 .swiper-review-slider .slider-content--stars {
   display: flex;
@@ -22,6 +23,6 @@
   align-items: center;
 }
 .swiper-review-slider .slider-content--stars svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }

@@ -25,8 +25,17 @@
 }
 
 .swiper .swiper-slide {
-  padding: 20px 16px;
+  padding-inline: 16px;
   text-decoration: none;
+}
+.swiper .swiper-slide.slides-card {
+  padding-block: 20px;
+}
+.swiper .swiper-slide.offset-normal {
+  padding-inline: 8px;
+}
+.swiper .swiper-slide.offset-small {
+  padding-inline: 4px;
 }
 
 .swiper.slides-card .swiper-slide--inner {
@@ -111,7 +120,7 @@
   width: 52px;
   z-index: 1;
   transition: all .25s;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px;
   border: 1px solid transparent;
 }
 
@@ -120,11 +129,11 @@
 }
 
 .slider-container .swiper-button-next {
-  right: 0;
+  right: 12px;
 }
 
 .slider-container .swiper-button-prev {
-  left: 0;
+  left: -12px;
 }
 
 .slider-container .swiper-arrow::after {
