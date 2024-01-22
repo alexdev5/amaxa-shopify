@@ -503,7 +503,7 @@
           "settings": {
             "title": "Ray Smith",
             "title_desc": "Verified",
-            "stars_quantity": 5,
+            "stars_quantity": 3,
             "comment": "All good....",
             "slide_url": ""
           }
@@ -628,6 +628,7 @@
         "navigation_enabled": true,
         "pagination_enabled": false,
         "slide_height": "default",
+        "slides_offset": "small",
         "slide_card": false,
         "container_width": true,
         "slider_align": "align_middle",
