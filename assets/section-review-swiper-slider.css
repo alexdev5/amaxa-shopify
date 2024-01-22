@@ -30,15 +30,15 @@
   stroke: #CECECE;
   fill: #CECECE;
 }
-.swiper-review-slider .stars-filled--5:nth-child(5) svg path {
+.swiper-review-slider .slider-content--stars:where(.stars-filled--5):nth-child(5) svg path {
   stroke: #FABF3A;
   fill: #FABF3A;
 }
-.swiper-review-slider .stars-filled--4:nth-child(4) svg path {
+.swiper-review-slider .slider-content--stars:where(.stars-filled--4):nth-child(4) svg path {
   stroke: #FABF3A;
   fill: #FABF3A;
 }
-.swiper-review-slider .stars-filled--3:nth-child(3) svg path {
+.swiper-review-slider .slider-content--stars:where(.stars-filled--3):nth-child(3) svg path {
   stroke: #FABF3A;
   fill: #FABF3A;
 }
