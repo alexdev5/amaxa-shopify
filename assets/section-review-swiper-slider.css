@@ -26,3 +26,6 @@
   width: 20px;
   height: 20px;
 }
+.swiper-review-slider .swiper-slide--content {
+  padding-top: var(--offset-small);
+}

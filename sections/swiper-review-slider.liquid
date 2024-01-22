@@ -35,7 +35,9 @@
         {% endif %}
           <div class="swiper-slide--inner {% if section.settings.slide_height != 'defalut' %}slide-height--{{ section.settings.slide_height }}{% endif %}">
             <div class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}">
-              <p class="slider-content--title">{{ block.settings.title }}</p>
+              <p class="slider-content--title title-font-size--middle">
+                {{ block.settings.title }}
+              </p>
               <p class="slider-content--title-desc">
                 <small>{{ block.settings.title_desc }}</small>
               </p>
@@ -113,7 +115,7 @@
     {
       "type": "select",
       "id": "slide_height",
-      "label": "Image height",
+      "label": "Slide height",
       "options": [
         {
           "value": "default",
