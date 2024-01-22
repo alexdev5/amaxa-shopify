@@ -34,9 +34,11 @@
     </div>
   {% endfor %}
 
-  <h1 class="images-banner--title {{ section.settings.heading_size }}">
-    {{ section.settings.heading }}
-  </h1>
+  {% if section.settings.heading != blank %}
+    <h1 class="images-banner--title {{ section.settings.heading_size }}">
+      {{ section.settings.heading }}
+    </h1>
+  {% endif %}
 </div>
 
 {% schema %}
