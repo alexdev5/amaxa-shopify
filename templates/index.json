@@ -494,6 +494,37 @@
         "padding_top": 68,
         "padding_bottom": 68
       }
+    },
+    "swiper_review_slider_M4xRTm": {
+      "type": "swiper-review-slider",
+      "blocks": {
+        "page_qhGUAC": {
+          "type": "page",
+          "settings": {
+            "title": "Ray Smith",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "All good....",
+            "slide_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_qhGUAC"
+      ],
+      "settings": {
+        "clickable": false,
+        "content_align": "left",
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "slide_height": "default",
+        "slide_card": false,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_content": ""
+      }
     }
   },
   "order": [
@@ -507,6 +538,7 @@
     "image_with_text_3dXjRB",
     "dec28744-d94a-4efa-8a11-8b18edd4ac32",
     "swiper_product_slider_jfjXWP",
-    "image_with_text_afWq6F"
+    "image_with_text_afWq6F",
+    "swiper_review_slider_M4xRTm"
   ]
 }
