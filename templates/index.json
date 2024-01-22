@@ -507,10 +507,120 @@
             "comment": "All good....",
             "slide_url": ""
           }
+        },
+        "page_9fezVh": {
+          "type": "page",
+          "settings": {
+            "title": "Daniel Itua",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "I recently tried Vitabiotics' Wellman Wellbeing supplement for men, and I must say it exceeded my expectations. The blend of essential vitamins and minerals specifically tailored for men's health made a noticeable difference in my overall well-being. I found that it provided me with a boost of energy and helped support my immune system.  I highly recommend giving Wellman Wellbeing a try if you're looking to enhance your overall health and vitality.",
+            "slide_url": ""
+          }
+        },
+        "page_HxNVMT": {
+          "type": "page",
+          "settings": {
+            "title": "Jean FERRIS",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "Advance notifications of subscription order are great.",
+            "slide_url": ""
+          }
+        },
+        "page_FT6PDH": {
+          "type": "page",
+          "settings": {
+            "title": "Olayinka Adekeye",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "The products arrived on time. It is working well. I feel more vibrant and energetic.",
+            "slide_url": ""
+          }
+        },
+        "page_jdr6rN": {
+          "type": "page",
+          "settings": {
+            "title": "Gokol",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "The products arrived on time. It is working well. I feel more vibrant and energetic.",
+            "slide_url": ""
+          }
+        },
+        "page_cbdJLh": {
+          "type": "page",
+          "settings": {
+            "title": "Diane Keeble",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "Fast Delivery  thanks Brian",
+            "slide_url": ""
+          }
+        },
+        "page_DTwKwc": {
+          "type": "page",
+          "settings": {
+            "title": "Avery",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "Timeliness of delivery.",
+            "slide_url": ""
+          }
+        },
+        "page_CK6pJH": {
+          "type": "page",
+          "settings": {
+            "title": "Leoba Shumbamhini",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "Very good quality supplements. Will keep buying",
+            "slide_url": ""
+          }
+        },
+        "page_dXJJ8w": {
+          "type": "page",
+          "settings": {
+            "title": "W A E Allison",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "Efficient, well priced and rapid delivery",
+            "slide_url": ""
+          }
+        },
+        "page_cERpJV": {
+          "type": "page",
+          "settings": {
+            "title": "Michael Doury",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "No hassle. Order was delivered in 2 days. Well done and thanks",
+            "slide_url": ""
+          }
+        },
+        "page_wbPK8Y": {
+          "type": "page",
+          "settings": {
+            "title": "Mrs Linda Reilly",
+            "title_desc": "Verified",
+            "stars_quantity": 5,
+            "comment": "First Class company great prices and very good vitamins been using Vitabiotics for years, great Customer service and very quick delivery would definitely recommend",
+            "slide_url": ""
+          }
         }
       },
       "block_order": [
-        "page_qhGUAC"
+        "page_qhGUAC",
+        "page_9fezVh",
+        "page_HxNVMT",
+        "page_FT6PDH",
+        "page_jdr6rN",
+        "page_cbdJLh",
+        "page_DTwKwc",
+        "page_CK6pJH",
+        "page_dXJJ8w",
+        "page_cERpJV",
+        "page_wbPK8Y"
       ],
       "settings": {
         "clickable": false,
