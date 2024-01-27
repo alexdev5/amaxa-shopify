@@ -2395,6 +2395,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  transition: all .2s linear;
 }
 
 @media screen and (max-width: 749px) {
@@ -2613,7 +2614,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   border-bottom: 1px solid var(--color-secendary);
   padding-top: 8px;
   padding-bottom: 8px;
-  transition: all .2s linear;
 }
 /* Search */
 menu-drawer + .header__search {
