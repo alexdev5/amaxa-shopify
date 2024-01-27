@@ -1,3 +1,5 @@
+@import "section-header.css";
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -19,7 +21,7 @@
   --section-margin-block-end-middle: 70px;
   --section-margin-block-end-big: 100px;
 
-  --color-primary: #F6F6F6;
+  --color-primary: #464646;
   --color-secendary: #F6F6F6;
 
   --breckpoint-xl: 1200px;

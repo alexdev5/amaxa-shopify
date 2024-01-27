@@ -28,7 +28,7 @@
   padding-inline: 16px;
   text-decoration: none;
 }
-.swiper .swiper-slide.slides-card {
+.swiper .slides-card .swiper-slide {
   padding-block: 20px;
 }
 .swiper .swiper-slide.offset-normal {
