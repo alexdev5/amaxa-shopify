@@ -7,7 +7,7 @@
           "type": "page",
           "settings": {
             "image": "shopify:\/\/shop_images\/Woman.jpg",
-            "image_position": 50,
+            "image_position": 100,
             "button_label": "Women",
             "button_url": ""
           }
@@ -25,7 +25,7 @@
           "type": "page",
           "settings": {
             "image": "shopify:\/\/shop_images\/Kids.jpg",
-            "image_position": 0,
+            "image_position": 50,
             "button_label": "Kids",
             "button_url": ""
           }
