@@ -21,7 +21,7 @@
         style="
            background-image: url('{{ block.settings.image  | img_url: 'original' }}');
           {%- if section.settings.border_radius > 0 -%}border-radius: {{ section.settings.border_radius }}px; {%- endif -%}
-          {%- if block.settings.image_position > 0 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
+          {%- if block.settings.image_position != 50 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
         ">
       
       {% if block.settings.button_label != blank %}
@@ -257,7 +257,7 @@
           "min": 0,
           "max": 100,
           "step": 1,
-          "default": 0,
+          "default": 50,
           "label": "Image position by 'x'"
         },
         {
