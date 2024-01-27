@@ -26,10 +26,10 @@
 
 .swiper .swiper-slide {
   padding-inline: 16px;
+  padding-block: 20px;
   text-decoration: none;
 }
-.swiper .slides-card .swiper-slide {
-  padding-block: 20px;
+.swiper.slides-card .swiper-slide {
 }
 .swiper .swiper-slide.offset-normal {
   padding-inline: 8px;
