@@ -7,7 +7,7 @@
           "type": "page",
           "settings": {
             "image": "shopify:\/\/shop_images\/Woman.jpg",
-            "image_position": 0,
+            "image_position": 50,
             "button_label": "Women",
             "button_url": ""
           }
@@ -16,7 +16,7 @@
           "type": "page",
           "settings": {
             "image": "shopify:\/\/shop_images\/Men.jpg",
-            "image_position": 0,
+            "image_position": 50,
             "button_label": "Men",
             "button_url": ""
           }
